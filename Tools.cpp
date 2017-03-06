@@ -257,3 +257,12 @@ bool Oko::trace_routte(Photon& foton, int pop=0)
 		foton.origin = norigin;
 		return trace_routte(foton, i);
 }
+
+int randint(int begin, int end)
+{
+    srand( time( NULL ) );
+    int amount = end - begin+1;
+
+    return ((rand() % amout) + begin);
+}
+
